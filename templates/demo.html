@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SDM Demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+		<h1>URL validation demo</h1>
+		{% if res.valid %}
+			<div class="alert alert-success">
+				Valid tag.<br>
+				UID: {{ res.tag.uid }}<br>
+				Read counter: {{ res.tag.read_ctr }}<br>
+				Tamper status: {{ res.tag.tt_status }}
+			</div>
+		{% else %}
+			<div class="alert alert-danger">
+				Invalid tag.
+			</div>
+		{% endif %}
+		</div>
+	</body>
+</html>
