@@ -57,6 +57,6 @@ sudo docker run \
     -e NFC_TAG_SECRET_KEY=c952c99d41713968dee6ca1c2a63a412 \
     -e NFC_PBKDF_ROUNDS=1000 \
     -e NFC_ENABLE_DEMO=YES \
-    -p 5000:80 \
+    -p 80:8080 \
     -it nfc-api
 ```
